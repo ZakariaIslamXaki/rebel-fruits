@@ -27,52 +27,52 @@
     <header>
         <!-- Nav Section Start -->
         <nav>
+            <div class="navbar bg-[#F85559] rounded-full">
+                <div class="navbar-start">
+                    <div class="hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a class="text-base font-medium text-[#FFF]">Home</a></li>
+                            <li><a class="text-base font-medium text-[#FFF]">About Us</a></li>
+                            <li><a class="text-base font-medium text-[#FFF]">Shop</a></li>
+                            <li><a class="text-base font-medium text-[#FFF]">All Fruits</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-center">
+                    <div class="w-10 rounded-full">
+                        <img src="/assets/logo.png" alt="Rebel Fruits Logo" />
+                    </div>
+                    <div>
+                        <a class="btn btn-ghost normal-case text-4xl font-extrabold text-[#FFF]">Rebel Fruits</a>
+                    </div>
+                </div>
+                <div class="relative navbar-end hidden lg:flex">
+                    <input type="text" placeholder="Search here" class="input rounded-full w-20 md:w-auto" />
+                    <button class="absolute items-center right-0 mr-6">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #111213;"></i>
+                    </button>
+                </div>
 
-        </nav>
-        <!-- Nav Section End -->
-        <div class="navbar bg-[#F85559] rounded-full">
-            <div class="navbar-start">
-                <div class="hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a class="text-base font-medium text-[#FFF]">Home</a></li>
-                        <li><a class="text-base font-medium text-[#FFF]">About Us</a></li>
-                        <li><a class="text-base font-medium text-[#FFF]">Shop</a></li>
-                        <li><a class="text-base font-medium text-[#FFF]">All Fruits</a></li>
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-96 -ml-20">
+                        <li><a class="text-base font-medium text-[#121212]">Home</a></li>
+                        <li><a class="text-base font-medium text-[#121212]">About Us</a></li>
+                        <li><a class="text-base font-medium text-[#121212]">Shop</a></li>
+                        <li><a class="text-base font-medium text-[#121212]">All Fruits</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="navbar-center">
-                <div class="w-10 rounded-full">
-                    <img src="/assets/logo.png" alt="Rebel Fruits Logo" />
-                </div>
-                <div>
-                    <a class="btn btn-ghost normal-case text-4xl font-extrabold text-[#FFF]">Rebel Fruits</a>
-                </div>
-            </div>
-            <div class="relative navbar-end hidden lg:flex">
-                <input type="text" placeholder="Search here" class="input rounded-full w-20 md:w-auto" />
-                <button class="absolute items-center right-0 mr-6">
-                    <i class="fa-solid fa-magnifying-glass" style="color: #111213;"></i>
-                </button>
-            </div>
-            
-            <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h8m-8 6h16" />
-                    </svg>
-                </label>
-                <ul tabindex="0"
-                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-96 -ml-20">
-                    <li><a class="text-base font-medium text-[#121212]">Home</a></li>
-                    <li><a class="text-base font-medium text-[#121212]">About Us</a></li>
-                    <li><a class="text-base font-medium text-[#121212]">Shop</a></li>
-                    <li><a class="text-base font-medium text-[#121212]">All Fruits</a></li>
-                </ul>
-            </div>
-        </div>
+        </nav>
+        <!-- Nav Section End -->
+
         <!-- Hero Section Start -->
         <section>
 
@@ -99,8 +99,32 @@
         <!-- Speciality Section End -->
     </main>
     <!-- Footer Section Start -->
-    <footer>
+    <footer class="footer footer-center p-10 bg-[#121212] ">
+        <div class="flex items-center">
+            <div class="w-10 rounded-full">
+                <img src="/assets/logo.png" alt="Rebel Fruits Logo" />
+            </div>
+            <div>
+                <a class="btn btn-ghost normal-case text-4xl font-extrabold text-[#FFF]">Rebel Fruits</a>
+            </div>
+        </div>
 
+        <div class="grid grid-flow-col gap-4 text-white">
+            <a class="hover:text-[#F85559] cursor-pointer text-base font-medium">Home</a>
+            <a class="hover:text-[#F85559] cursor-pointer text-base font-medium">About Us</a>
+            <a class="hover:text-[#F85559] cursor-pointer text-base font-medium">Shop</a>
+            <a class="hover:text-[#F85559] cursor-pointer text-base font-medium">All Fruits</a>
+            <a class="hover:text-[#F85559] cursor-pointer text-base font-medium">Support</a>
+            <a class="hover:text-[#F85559] cursor-pointer text-base font-medium">My Account</a>
+        </div>
+        <div class="grid grid-flow-col gap-8 text-white">
+            <a href=""><i class="fa-brands fa-twitter fa-2xl hover:text-[#F85559] cursor-pointer"></i></a>
+            <a href=""><i class="fa-brands fa-facebook-f fa-2xl hover:text-[#F85559] cursor-pointer"></i></a>
+            <a href=""><i class="fa-brands fa-youtube fa-2xl hover:text-[#F85559] cursor-pointer"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in fa-2xl hover:text-[#F85559] cursor-pointer"></i></a>
+            <a href=""><i class="fa-brands fa-instagram fa-2xl hover:text-[#F85559] cursor-pointer"></i></a>
+            <a href=""><i class="fa-brands fa-apple fa-2xl hover:text-[#F85559] cursor-pointer"></i></a>
+        </div>
     </footer>
     <!-- Footer Section End -->
 </body>
